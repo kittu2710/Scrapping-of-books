@@ -1,6 +1,11 @@
+"""
+A python script for downloading information of books from this web page 'https://www.amazon.com/best-sellers-books-Amazon/zgbs/books/'
+"""
+import csv
+
 import requests
 import bs4
-import csv
+
 # Getting main page from amazon.com bestsellers website
 get_url = 'https://www.amazon.in/gp/bestsellers/books'
 main_page = requests.get(get_url)
